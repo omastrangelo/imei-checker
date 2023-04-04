@@ -1,0 +1,11 @@
+.buttonContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Boton Crear*/
+.btn{
+    display:flex;
+    justify-content: space-around;
+
+}
