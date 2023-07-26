@@ -70,7 +70,8 @@ return (
                                 <option value="Bolivar">Bolivar</option>
                                 <option value="Mar del Plata">Mar del Plata</option>
                                 <option value="Bahia Blanca">Bahia Blanca</option>
-                                <option value="Lanus">Lanus</option>
+                                <option value="Dolores">Dolores</option>
+                                <option value="Junin">Junin</option>
                             </select>
                     </div>  
 
