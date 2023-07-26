@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import { collection,addDoc } from "firebase/firestore";
 import {db} from "../firebaseConfig/firebase.js"
+import { Link } from 'react-router-dom'
+import Button from 'react-bootstrap/Button'
+import "../Assets/Button.css"
 
 const Create = () =>{
 
@@ -36,7 +38,7 @@ const Create = () =>{
                       <input type="number" className="form-control"
                       value={imei}
                       onChange={(e)=>setImei(e.target.value)}
-                      required/>
+                      required minLength="15" maxLength="15"/>
                     </div>
         
                     <div className="mb-3">
@@ -63,7 +65,12 @@ const Create = () =>{
                       onChange={(e)=>setIpp(e.target.value)}
                       required minlength="18" maxLength="18" placeholder="00-00-000000-00/00"/> 
                     </div>
-        <button type="submit" className="btn btn-primary">CREAR</button>
+                    <div className="buttonContainerCrear">
+                      <button type="submit" className="btn btn-primary">Crear</button>
+                      <Link to="/"> {}
+                        <Button variant="secondary" className="buttonBack">Atrás</Button>
+                    </Link>
+                    </div>
                   </form>
                 </div>
               </div>

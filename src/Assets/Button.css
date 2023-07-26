@@ -3,9 +3,27 @@
     justify-content: space-evenly;
 }
 
-/*Boton Crear*/
+
+/*Botones Crear*/
 .btn{
     display:flex;
     justify-content: space-around;
 
+}
+
+.buttonContainerCrear{
+    display: flex;
+    justify-content: center;
+}
+
+/*Botones Editar*/
+.buttonContainerEdit{
+    display: flex;
+    justify-content: center;
+}
+
+/*Boton Atrás*/
+
+.buttonBack{
+    margin-left: 1rem;
 }

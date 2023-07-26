@@ -2,6 +2,9 @@ import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { getDoc, updateDoc, doc } from "firebase/firestore"
 import { db } from "../firebaseConfig/firebase"
+import { Link } from 'react-router-dom'
+import Button from 'react-bootstrap/Button'
+import "../Assets/Button.css"
 
 const Edit = ()=>{
     const [ departamento, setDepartamento ] = useState('')
@@ -39,6 +42,7 @@ useEffect(()=>{
 },[])
 
 return (
+    
     <div className='container'>
         <div className='row'>
             <div className='col'>
@@ -78,8 +82,13 @@ return (
                             type="text"
                             className='form-control' minlength="18" maxLength="18"
                         />                 
-                    </div>  
-                    <button type='submit' className='btn btn-primary'>Editar</button>
+                    </div>
+                    <div className="buttonContainerEdit">  
+                    <button type='submit' className='btn btn-danger'>Aceptar</button>
+                    <Link to="/"> {}
+                        <Button variant="primary" className="buttonBack">Atrás</Button>
+                    </Link>
+                    </div>
                  </form>   
             </div>
         </div>

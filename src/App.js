@@ -6,7 +6,6 @@ import {BrowserRouter,Routes,Route} from "react-router-dom"
 import TableInfo from './Components/TableInfo';
 import Create from './Components/Create';
 import Edit from './Components/Edit';
-
 function App() {
   return (
     <BrowserRouter>
