@@ -46,13 +46,14 @@ const Create = () =>{
                       <select type="text" className="form-control"
                       value={departamento}
                       onChange={(e)=>setDepartamento(e.target.value)} required >
-                         <option value="Azul">Azul</option>
-                         <option value="Olavarria">Olavarria</option>
-                         <option value="Tandil">Tandil</option>
-                         <option value="Bolivar">Bolivar</option>
-                         <option value="Mar del Plata">Mar del Plata</option>
-                         <option value="Bahia Blanca">Bahia Blanca</option>
-                         <option value="Lanus">Lanus</option>
+                                <option value="Azul">Azul</option>
+                                <option value="Olavarria">Olavarria</option>
+                                <option value="Tandil">Tandil</option>
+                                <option value="Bolivar">Bolivar</option>
+                                <option value="Mar del Plata">Mar del Plata</option>
+                                <option value="Bahia Blanca">Bahia Blanca</option>
+                                <option value="Dolores">Dolores</option>
+                                <option value="Junin">Junin</option>
 
 
 
