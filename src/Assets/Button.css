@@ -22,6 +22,10 @@
     justify-content: center;
 }
 
+.link{
+    text-decoration:none;
+}
+
 /*Boton Atrás*/
 
 .buttonBack{

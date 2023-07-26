@@ -67,8 +67,8 @@ const Create = () =>{
                     </div>
                     <div className="buttonContainerCrear">
                       <button type="submit" className="btn btn-primary">Crear</button>
-                      <Link to="/"> {}
-                        <Button variant="secondary" className="buttonBack">Atrás</Button>
+                      <Link className="link" to="/"> {}
+                        <Button variant="warning" className="buttonBack">Atrás</Button>
                     </Link>
                     </div>
                   </form>

@@ -85,7 +85,7 @@ return (
                     </div>
                     <div className="buttonContainerEdit">  
                     <button type='submit' className='btn btn-danger'>Aceptar</button>
-                    <Link to="/"> {}
+                    <Link className="link" to="/"> {}
                         <Button variant="primary" className="buttonBack">Atrás</Button>
                     </Link>
                     </div>
