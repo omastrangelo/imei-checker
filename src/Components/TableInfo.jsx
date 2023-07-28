@@ -87,7 +87,7 @@ useEffect(()=>{
       <div className="d-grid gap-2">
         <Link to={"/create"} className="btn btn-secondary mt-2 mb-2">CREAR</Link>
       </div>
-      <table className='table table-white table hover'>
+      <table className='TableInfo table-white table hover'>
         <thead>
           <tr>
             <th>Imei</th>
