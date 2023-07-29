@@ -24,7 +24,7 @@ const Create = () =>{
             departamento: departamento,
             ipp: ipp,
         })
-        navigate("/")
+        navigate("/TableInfo")
     }
 
     return(
@@ -68,7 +68,7 @@ const Create = () =>{
                     </div>
                     <div className="buttonContainerCrear">
                       <button type="submit" className="btn btn-primary">Crear</button>
-                      <Link className="link" to="/"> {}
+                      <Link className="link" to="/TableInfo"> {}
                         <Button variant="secondary" className="buttonBack">Atrás</Button>
                     </Link>
                     </div>
