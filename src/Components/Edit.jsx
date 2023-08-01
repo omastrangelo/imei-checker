@@ -24,7 +24,7 @@ const Edit = ()=>{
             imei: imei,
         }
         await updateDoc (product,data)
-        navigate("/TableInfo")
+        navigate("/table")
     }
 
     const getProductById= async (id)=>{
@@ -86,7 +86,7 @@ return (
                     </div>
                     <div className="buttonContainerEdit">  
                     <button type='submit' className='btn btn-danger'>Aceptar</button>
-                    <Link className="link" to="/TableInfo"> {}
+                    <Link className="link" to="/table"> {}
                         <Button variant="primary" className="buttonBack">Atrás</Button>
                     </Link>
                     </div>

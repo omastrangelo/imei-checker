@@ -32,11 +32,15 @@ function App({ firebaseApp }) {
               <Route path="/login" element={<Navigate to="/table" />} />
             </>
           ) : (
-            // Mostrar el componente de inicio de sesión si el usuario no está autenticado
-            <Route path="/login" element={<Login firebaseApp={firebaseApp} onLogin={handleLogin} />} />
+            <>
+              {/* Mostrar el componente de inicio de sesión si el usuario no está autenticado */}
+              <Route path="/login" element={<Login firebaseApp={firebaseApp} onLogin={handleLogin} />} />
+              {/* Ruta para crear usuario */}
+              <Route path="/createUser" element={<CreateUser />} />
+              {/* Redirigir a /login si el usuario no está autenticado */}
+              <Route path="*" element={<Navigate to="/login" />} />
+            </>
           )}
-          {/* Redirigir a /login si el usuario no está autenticado */}
-          <Route path="*" element={<Navigate to="/login" />} />
         </Routes>
       </div>
     </Router>

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'; // Import getAuth and createUserWithEmailAndPassword
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import { Link, useNavigate } from 'react-router-dom';
 
 const CreateUser = ({ firebaseApp }) => {
-  const [email, setEmail] = useState(''); // Define email state
-  const [password, setPassword] = useState(''); // Define password state
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate(); 
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -12,12 +14,15 @@ const CreateUser = ({ firebaseApp }) => {
     
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // New user created successfully
-        console.log('New user created:', userCredential.user);
+
+        console.log('Nuevo usuario creado:', userCredential.user);
+
+   
+        navigate('/Login');
       })
       .catch((error) => {
-        // Handle any errors during user creation
-        console.error('Error creating user:', error);
+
+        console.error('Error al crear nuevo usuario:', error);
       });
   };
 
@@ -35,12 +40,14 @@ const CreateUser = ({ firebaseApp }) => {
           <Form.Control type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </Form.Group>
 
-        <Button variant="primary" type="submit" onClick={handleSignUp}>
-          Create User
-        </Button>
+        {}
+        <Link to="/Login">
+          <Button variant="primary" type="submit" onClick={handleSignUp}>Create User</Button>
+        </Link>
       </Form>
     </div>
   );
 };
 
 export default CreateUser;
+
