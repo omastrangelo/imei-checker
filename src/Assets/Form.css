@@ -1,0 +1,14 @@
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.formButton{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.loginButton{
+    margin-right: 1rem;
+}

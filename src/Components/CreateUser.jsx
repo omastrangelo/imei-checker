@@ -28,21 +28,22 @@ const CreateUser = ({ firebaseApp }) => {
 
   return (
     <div className="container mt-5">
-      <h2>Create User</h2>
+      <h2>Crear Usuario</h2>
       <Form>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <Form.Control type="email" placeholder="Ingrese su email" value={email} onChange={(e) => setEmail(e.target.value)} />
         </Form.Group>
 
         <Form.Group controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <Form.Label>Contraseña</Form.Label>
+          <Form.Control type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <h6>La contraseña debe de tener una longitud superior a los 6 caracteres para ser correcta.</h6>
         </Form.Group>
 
         {}
         <Link to="/Login">
-          <Button variant="primary" type="submit" onClick={handleSignUp}>Create User</Button>
+          <Button variant="primary" type="submit" onClick={handleSignUp}>Crear usuario</Button>
         </Link>
       </Form>
     </div>
